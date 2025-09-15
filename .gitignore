@@ -15,6 +15,20 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.development
+.env.production
+.env.staging
+.env.test
+
+# Banking-specific sensitive files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+keys/
+certificates/
 
 # IDE and editor files
 .vscode/
@@ -90,3 +104,39 @@ jspm_packages/
 # Temporary folders
 tmp/
 temp/
+
+# Banking-specific
+database/
+*.db
+*.sqlite
+*.sqlite3
+backups/
+migrations/
+
+# Security & Compliance
+audit-logs/
+security-logs/
+compliance-reports/
+*.audit
+
+# Vite-specific
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+.jest/
+test-results/
+playwright-report/
+test-results.xml
+
+# Deployment
+.vercel/
+.netlify/
+.docker/
+docker-compose.override.yml
+
+# Local development
+.local/
+local-config/
